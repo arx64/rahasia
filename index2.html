@@ -146,7 +146,58 @@
       </div>  
     </div>
       <script>
-        
+        document.addEventListener('DOMContentLoaded', (event) => {
+    const showLoginModal = () => {
+        Swal.fire({
+            title: 'Login',
+            html: `
+                <input type="text" id="username" class="swal2-input" placeholder="Username">
+                <input type="password" id="password" class="swal2-input" placeholder="Password">
+            `,
+            focusConfirm: false,
+            allowEscapeKey: false,
+            allowOutsideClick: false,
+            showCancelButton: false,
+            confirmButtonText: 'Login',
+            customClass: {
+                backdrop: 'swal2-backdrop-custom'
+            },
+            preConfirm: () => {
+                const password = Swal.getPopup().querySelector('#password').value;
+                if (!password) {
+                    Swal.showValidationMessage(`Please enter login and password`);
+                }
+                return { password: password };
+            }
+        }).then((result) => {
+          console.log(result);
+            if (result.isConfirmed) {
+                const { password } = result.value;
+                if (password === "sayangkamu") {
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Login successful!',
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
+                } else {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Invalid password',
+                        text: 'Please try again',
+                        showConfirmButton: false,
+                        timer: 1500
+                    }).then(() => {
+                        showLoginModal();
+                    });
+                }
+            }
+        });
+    };
+
+    showLoginModal();
+});
+
     function copyToClipboard(text) {
       // Buat elemen textarea
       const textarea = document.createElement('textarea');
