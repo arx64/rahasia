@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ILY 3000</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <style>
+        li {
+            list-style-type: number;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid bg-primary">
+      <h1 class="text-center text-white">Hello, welcome!</h1>
+      <div class="row justify-content-center align-items-center">
+        <div class="col-12">
+          <div class="card m-4">
+            <div class="card-body">
+              <h5 class="card-title bg-warning p-3 text-center rounded">Info!</h5>
+              <!-- <h6 class="card-subtitle mb-4 text-body-secondary">Card subtitle</h6> -->
+              <p class="card-text">
+                Berikut adalah langkah-langkah untuk memulai:
+                <ul>
+                    <img src="img/step-1.jpg" class="img-fluid" alt="Step 1">
+                    <li>Buka Android Studio</li>
+                    <li>Pada gambar yang tertera di atas, klik <b>Get from VCS</b> di dekat bagian pojok kanan atas</li>
+                    <li>Kemudian tampilannya akan menjadi seperti di bawah ini:</li>
+                    <img src="img/step-2.jpg" class="img-fluid" alt="Step 2">
+                    <li>Pada bagian URL, isikan dengan URL yang didapatkan dari halaman ini, dengan cara:</li>
+                    <li>Click <b>Copy Link</b> pada salah satu tombol yang tersedia dibawah</li>
+                    <li>Buka Android Studio, lalu paste link tersebut ke bagian URL tersebut dan klik <b>Clone</b></li>
+                    <img src="img/step-3.jpg" class="img-fluid" alt="Step 3">
+                    <li>Kemudian tampilnya akan menjadi seperti di bawah ini:</li>
+                    <img src="img/step-4.jpg" class="img-fluid" alt="Step 4">
+                    <li>Tunggu hingga proses <b>Gradle Building...</b> selesai, dapat dilihat di pojok kanan bawah</li>
+                    <li>Proses selesai, jika anda ingin mengedit Tampilan(layout), silahkan pergi ke <b>App -> res -> layout -> activity_main.xml</b></li>
+                    <li>Jika anda ingin mengedit Warna (pada Button), silahkan pergi ke <b>App -> res -> values -> colors.xml</b></li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-auto mb-4">
+          <!-- Card -->
+          <div class="card" style="width: 18rem">
+            <img src="img/LayoutButtonHorizontal.jpg" class="card-img-top" alt="Layout Button Horizontal" />
+            <div class="card-body">
+              <h5 class="card-title">Layout Button Horizontal</h5>
+              <p class="card-text">
+
+              </p>
+              <a onclick="copyToClipboard('https://github.com/arx64/LayoutButtonHorizontal')" class="btn btn-primary">Copy Link</a>
+            </div>
+          </div>
+          <!-- End Card -->
+        </div>
+
+        <div class="col-auto mb-4">
+          <!-- Card -->
+          <div class="card" style="width: 18rem">
+            <img src="img/LayoutButtonVertical.jpg" class="card-img-top" alt="Layout Button Vertical" />
+            <div class="card-body">
+              <h5 class="card-title">Layout Button Vertical</h5>
+              <p class="card-text">
+                
+              </p>
+              <a onclick="copyToClipboard('https://github.com/arx64/LayoutButtonVertical')" class="btn btn-primary">Copy Link</a>
+            </div>
+          </div>
+          <!-- End Card -->
+        </div>
+
+        <div class="col-auto mb-4">
+          <!-- Card -->
+          <div class="card" style="width: 18rem">
+            <img src="img/TagLayoutGravity.jpg" class="card-img-top" alt="Tag Layout Gravity" />
+            <div class="card-body">
+              <h5 class="card-title">Tag Layout Button Gravity Center</h5>
+              <p class="card-text">
+                <b>Note:</b> Untuk mengubah posisi tampilan dari tengah ke kanan ataupun ke tampilan yang lain, ganti kode pada bagian android:layout_gravity="<b>center</b>" *ganti <b>center</b> tersebut menjadi <b>right</b> untuk kanan/<b>left</b>
+                untuk kiri
+              </p>
+              <a onclick="copyToClipboard('https://github.com/arx64/TagLayoutGravity')" class="btn btn-primary">Copy Link</a>
+            </div>
+          </div>
+          <!-- End Card -->
+        </div>
+
+        <div class="col-auto mb-4">
+          <!-- Card -->
+          <div class="card" style="width: 18rem">
+            <img src="img/WeightHorizontal.jpg" class="card-img-top" alt="Tag Layout Gravity" />
+            <div class="card-body">
+              <h5 class="card-title">Tag Weight pada orientation horizontal</h5>
+              <p class="card-text">
+              </p>
+              <a onclick="copyToClipboard('https://github.com/arx64/WeightHorizontal')" class="btn btn-primary">Copy Link</a>
+            </div>
+          </div>
+          <!-- End Card -->
+        </div>
+        <div class="col-auto mb-4">
+          <!-- Card -->
+          <div class="card" style="width: 18rem">
+            <img src="img/FormLayout.jpg" class="card-img-top" alt="FormLayout" />
+            <div class="card-body">
+              <h5 class="card-title">Form Layout Pesan</h5>
+              <p class="card-text">
+              </p>
+              <a onclick="copyToClipboard('https://github.com/arx64/FormLayout')" class="btn btn-primary">Copy Link</a>
+            </div>
+          </div>
+          <!-- End Card -->
+        </div>
+        <div class="col-auto mb-4">
+          <!-- Card -->
+          <div class="card" style="width: 18rem">
+            <img src="img/FormLayoutKomentar.jpg" class="card-img-top" alt="Form Layout Komentar" />
+            <div class="card-body">
+              <h5 class="card-title">Form Layout Komentar</h5>
+              <p class="card-text">
+              </p>
+              <a onclick="copyToClipboard('https://github.com/arx64/FormLayoutKomentar')" class="btn btn-primary">Copy Link</a>
+            </div>
+          </div>
+          <!-- End Card -->
+        </div>
+        <div class="col-auto mb-4">
+          <!-- Card -->
+          <div class="card" style="width: 18rem">
+            <img src="img/FormLogin.jpg" class="card-img-top" alt="Tag Layout Gravity" />
+            <div class="card-body">
+              <h5 class="card-title">Form Layout Login</h5>
+              <p class="card-text">
+              </p>
+              <a onclick="copyToClipboard('https://github.com/arx64/FormLogin')" class="btn btn-primary">Copy Link</a>
+            </div>
+          </div>
+          <!-- End Card -->
+        </div>
+      </div>  
+    </div>
+      <script>
+    function copyToClipboard(text) {
+      // Buat elemen textarea
+      const textarea = document.createElement('textarea');
+      // Set nilai elemen textarea dengan teks yang ingin disalin
+      textarea.value = text;
+      // Tambahkan elemen textarea ke dokumen
+      document.body.appendChild(textarea);
+      // Pilih teks di dalam elemen textarea
+      textarea.select();
+      // Salin teks yang dipilih ke clipboard
+      document.execCommand('copy');
+      // Hapus elemen textarea dari dokumen
+      document.body.removeChild(textarea);
+      // Tampilkan pesan konfirmasi (opsional)
+      alert('Link telah disalin ke clipboard!');
+    }
+  </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
